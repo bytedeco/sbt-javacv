@@ -23,7 +23,7 @@ publishTo <<= version { v: String =>
 }
 
 pomExtra := (
-  <url>https://bitbucket.org/lloydmeta/sbt-opencv</url>
+  <url>https://github.com/lloydmeta/sbt-opencv</url>
     <licenses>
       <license>
         <name>MIT</name>
@@ -32,8 +32,8 @@ pomExtra := (
       </license>
     </licenses>
     <scm>
-      <url>git@bitbucket.org:lloydmeta/sbt-opencv.git</url>
-      <connection>scm:git:git@bitbucket.org:lloydmeta/sbt-opencv.git</connection>
+      <url>git@github.com:lloydmeta/sbt-opencv.git</url>
+      <connection>scm:git:git@github.com:lloydmeta/sbt-opencv.git</connection>
     </scm>
     <developers>
       <developer>
