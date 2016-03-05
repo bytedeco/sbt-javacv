@@ -14,8 +14,6 @@ Configures the following dependencies in your project:
 In your `project/plugins.sbt`:
 
 ```scala
-resolvers += "Sonatype OSS Releases" at "https://oss.sonatype.org/service/local/staging/deploy/maven2"
-
 addSbtPlugin("com.beachape" % "sbt-opencv" % "1.2")
 ```
 
