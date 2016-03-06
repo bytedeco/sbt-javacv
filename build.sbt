@@ -1,6 +1,6 @@
 name := """sbt-opencv"""
 
-version := "1.3-SNAPSHOT"
+version := "1.3"
 
 organization := "com.beachape"
 
@@ -43,3 +43,7 @@ pomExtra := (
       </developer>
     </developers>
   )
+
+resolvers += Resolver.sonatypeRepo("releases")
+
+addSbtPlugin("com.beachape" % "sbt-javacpp" % "1.0")
