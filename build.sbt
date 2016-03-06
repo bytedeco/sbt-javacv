@@ -1,6 +1,6 @@
 name := """sbt-opencv"""
 
-version := "1.3"
+version := "1.4-SNAPSHOT"
 
 organization := "com.beachape"
 
