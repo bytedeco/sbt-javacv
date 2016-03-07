@@ -24,9 +24,8 @@ running SBT, you can modify this by setting it to another platform (for example,
 on other platforms)
 
 ```scala
-javaCVPlatform := "android-arm"
+javaCppPlatform := "android-arm"
 ```
-
 
 
 ## Licence
