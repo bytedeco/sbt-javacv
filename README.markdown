@@ -2,7 +2,7 @@
 
 Makes it easy to start playing around with OpenCV (via JavaCV) in Scala without having to compile
 or install OpenCV on your own.
- 
+
 Configures the following dependencies in your project:
 
 - JavaCV
@@ -26,6 +26,8 @@ on other platforms)
 ```scala
 javaCppPlatform := "android-arm"
 ```
+
+For more details, see the [SBT-JavaCPP plugin](https://github.com/lloydmeta/sbt-javacpp#customisation)
 
 
 ## Licence

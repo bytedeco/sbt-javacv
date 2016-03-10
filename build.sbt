@@ -46,4 +46,4 @@ pomExtra := (
 
 resolvers += Resolver.sonatypeRepo("releases")
 
-addSbtPlugin("com.beachape" % "sbt-javacpp" % "1.1")
+addSbtPlugin("com.beachape" % "sbt-javacpp" % "1.2")
