@@ -14,7 +14,7 @@ Configures the following dependencies in your project:
 In your `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("com.beachape" % "sbt-opencv" % "1.3")
+addSbtPlugin("com.beachape" % "sbt-opencv" % "1.4")
 ```
 
 ## Customisation
