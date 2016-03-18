@@ -20,7 +20,7 @@ object Plugin extends AutoPlugin {
           ExclusionRule(organization = "org.bytedeco.javacpp")
         )
       },
-      JavaCppPlugin.javaCppPresetDependency("opencv")
+      JavaCppPlugin.autoImport.javaCppPresetLibs ++= JavaCVCppPresets.libs
     )
   }
 
@@ -30,6 +30,16 @@ object Plugin extends AutoPlugin {
 
   object autoImport {
     val javaCVVersion = SettingKey[String]("javaCVVersion", s"Version of Java CV that you want to use, defaults to ${Versions.javaCVVersion}")
+  }
+
+  object JavaCVCppPresets {
+    /**
+     * List of default JavaCPP preset names and versions that will be added by this plugin
+     */
+    val libs = Seq(
+      "opencv" -> "3.0.0",
+      "videoinput" -> "0.200"
+    )
   }
 
   override def requires: Plugins = plugins.JvmPlugin && JavaCppPlugin

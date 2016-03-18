@@ -14,7 +14,7 @@ Configures the following dependencies in your project:
 In your `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("com.beachape" % "sbt-opencv" % "1.4")
+addSbtPlugin("com.beachape" % "sbt-opencv" % "1.5")
 ```
 
 ## Customisation
@@ -28,6 +28,15 @@ javaCppPlatform := "android-arm"
 ```
 
 For more details, see the [SBT-JavaCPP plugin](https://github.com/lloydmeta/sbt-javacpp#customisation)
+
+Also, this plugin only pulls in `opencv` and `videoinput` JavaCPP presets by default. If you wish to add more, use the `javaCppPresetLibs`
+settings key and use `++=` to append more (if you do not use append, you will end up wiping out the ones this plugin appends by default):
+
+```scala
+javaCppPresetLibs ++= Seq(
+  "ffmpeg" -> "2.8.1"
+)
+```
 
 
 ## Licence
