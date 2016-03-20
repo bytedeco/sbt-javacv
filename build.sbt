@@ -1,8 +1,8 @@
-name := """sbt-opencv"""
+name := """sbt-javacv"""
 
 version := "1.6-SNAPSHOT"
 
-organization := "com.beachape"
+organization := "org.bytedeco"
 
 sbtPlugin := true
 
@@ -23,7 +23,7 @@ publishTo <<= version { v: String =>
 }
 
 pomExtra := (
-  <url>https://github.com/lloydmeta/sbt-opencv</url>
+  <url>https://github.com/bytedeco/sbt-javacv</url>
     <licenses>
       <license>
         <name>MIT</name>
@@ -32,8 +32,8 @@ pomExtra := (
       </license>
     </licenses>
     <scm>
-      <url>git@github.com:lloydmeta/sbt-opencv.git</url>
-      <connection>scm:git:git@github.com:lloydmeta/sbt-opencv.git</connection>
+      <url>git@github.com:bytedeco/sbt-javacv.git</url>
+      <connection>scm:git:git@github.com:bytedeco/sbt-javacv.git</connection>
     </scm>
     <developers>
       <developer>
@@ -46,4 +46,4 @@ pomExtra := (
 
 resolvers += Resolver.sonatypeRepo("releases")
 
-addSbtPlugin("com.beachape" % "sbt-javacpp" % "1.3")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.3")

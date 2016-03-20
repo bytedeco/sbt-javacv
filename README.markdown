@@ -1,4 +1,4 @@
-# SBT-OpenCV
+# SBT-JavaCV
 
 Makes it easy to start playing around with OpenCV (via JavaCV) in Scala without having to compile
 or install OpenCV on your own.
@@ -27,7 +27,7 @@ on other platforms)
 javaCppPlatform := "android-arm"
 ```
 
-For more details, see the [SBT-JavaCPP plugin](https://github.com/lloydmeta/sbt-javacpp#customisation)
+For more details, see the [SBT-JavaCPP plugin](https://github.com/bytedeco/sbt-javacpp#customisation)
 
 Also, this plugin only pulls in `opencv` and `videoinput` JavaCPP presets by default. If you wish to add more, use the `javaCppPresetLibs`
 settings key and use `++=` to append more (if you do not use append, you will end up wiping out the ones this plugin appends by default):

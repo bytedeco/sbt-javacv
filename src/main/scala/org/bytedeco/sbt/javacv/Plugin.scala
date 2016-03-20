@@ -1,4 +1,4 @@
-package com.beachape.sbt.opencv
+package org.bytedeco.sbt.javacv
 
 import scala.language.postfixOps
 import sbt._
