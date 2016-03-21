@@ -3,7 +3,7 @@ package org.bytedeco.sbt.javacv
 import scala.language.postfixOps
 import sbt._
 import sbt.Keys._
-import com.beachape.sbt.javacpp.{ Plugin => JavaCppPlugin }
+import org.bytedeco.sbt.javacpp.{ Plugin => JavaCppPlugin }
 
 /**
  * Created by Lloyd on 2/22/16.
