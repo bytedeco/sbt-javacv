@@ -1,6 +1,6 @@
 name := """sbt-javacv"""
 
-version := "1.6"
+version := "1.7-SNAPSHOT"
 
 organization := "org.bytedeco"
 
