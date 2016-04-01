@@ -44,6 +44,9 @@ pomExtra := (
     </developers>
   )
 
-resolvers += Resolver.sonatypeRepo("releases")
+resolvers ++= Seq(
+  Resolver.sonatypeRepo("releases"),
+  Resolver.sonatypeRepo("snapshots")
+)
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.3")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.4-SNAPSHOT")
