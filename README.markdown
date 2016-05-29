@@ -14,7 +14,7 @@ Configures the following dependencies in your project:
 In your `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.6")
+addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.7")
 ```
 
 ## Customisation
