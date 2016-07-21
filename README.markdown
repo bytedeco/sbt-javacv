@@ -1,5 +1,7 @@
 # SBT-JavaCV
 
+[![Join the chat at https://gitter.im/bytedeco/sbt-javacv](https://badges.gitter.im/bytedeco/sbt-javacv.svg)](https://gitter.im/bytedeco/sbt-javacv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Makes it easy to start playing around with OpenCV (via JavaCV) in Scala without having to compile
 or install OpenCV on your own.
 
