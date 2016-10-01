@@ -1,6 +1,7 @@
 # SBT-JavaCV
 
-[![Join the chat at https://gitter.im/bytedeco/sbt-javacv](https://badges.gitter.im/bytedeco/sbt-javacv.svg)](https://gitter.im/bytedeco/sbt-javacv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/bytedeco/sbt-javacv](https://badges.gitter.im/bytedeco/sbt-javacv.svg)](https://gitter.im/bytedeco/sbt-javacv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.bytedeco/sbt-javacv/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.bytedeco/sbt-javacv)
+
 
 Makes it easy to start playing around with OpenCV (via JavaCV) in Scala without having to compile
 or install OpenCV on your own.
@@ -16,8 +17,10 @@ Configures the following dependencies in your project:
 In your `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("org.bytedeco" % "sbt-javacv" % "1.9.1")
+addSbtPlugin("org.bytedeco" % "sbt-javacv" % version)
 ```
+
+See the Maven badge for latest version.
 
 ## Customisation
 
