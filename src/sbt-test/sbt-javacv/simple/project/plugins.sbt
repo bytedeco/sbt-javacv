@@ -1,3 +1,5 @@
+resolvers += Opts.resolver.sonatypeReleases
+
 {
   val pluginVersion = System.getProperty("plugin.version")
   if(pluginVersion == null)
