@@ -1,6 +1,6 @@
 name := """sbt-javacv"""
 
-version := "1.11-SNAPSHOT"
+version := "1.11"
 
 organization := "org.bytedeco"
 
@@ -49,4 +49,4 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.7")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.8")
