@@ -14,8 +14,8 @@ object Plugin extends AutoPlugin {
     import autoImport._
     Seq(
       javaCVVersion := Versions.javaCVVersion,
-      libraryDependencies <+= javaCVVersion { resolvedJavaCVVersion =>
-        "org.bytedeco" % "javacv" % resolvedJavaCVVersion excludeAll (
+      libraryDependencies += {
+        "org.bytedeco" % "javacv" % javaCVVersion.value excludeAll (
           ExclusionRule(organization = "org.bytedeco.javacpp-presets"),
           ExclusionRule(organization = "org.bytedeco.javacpp")
         )
