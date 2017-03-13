@@ -49,4 +49,4 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.9")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.10")
