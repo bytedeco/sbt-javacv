@@ -25,7 +25,7 @@ object Plugin extends AutoPlugin {
   }
 
   object Versions {
-    val javaCVVersion = "1.3.1"
+    val javaCVVersion = "1.3.2"
   }
 
   object autoImport {
