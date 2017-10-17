@@ -1,8 +1,24 @@
 name := """sbt-javacv"""
 
-version := "1.15-SNAPSHOT"
+version := "1.15"
 
 organization := "org.bytedeco"
+
+scalaVersion := "2.12.3"
+
+sbtVersion in Global := {
+  if (scalaVersion.value.startsWith("2.12"))
+    "1.0.2"
+  else
+    "0.13.16"
+}
+
+crossSbtVersions := Vector("0.13.16", "1.0.2")
+
+scalaCompilerBridgeSource := {
+  val sv = appConfiguration.value.provider.id.version
+  ("org.scala-sbt" % "compiler-interface" % sv % "component").sources
+}
 
 sbtPlugin := true
 
@@ -49,4 +65,4 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.10")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.11")
