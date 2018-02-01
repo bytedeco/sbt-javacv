@@ -39,6 +39,6 @@ settings key and use `++=` to append more (if you do not use append, you will en
 
 ```scala
 javaCppPresetLibs ++= Seq(
-  "ffmpeg" -> "3.2.1"
+  "ffmpeg" -> "3.4.1"
 )
 ```
