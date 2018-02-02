@@ -4,16 +4,16 @@ version := "1.16-SNAPSHOT"
 
 organization := "org.bytedeco"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 sbtVersion in Global := {
   if (scalaVersion.value.startsWith("2.12"))
-    "1.0.2"
+    "1.0.4"
   else
-    "0.13.16"
+    "0.13.17"
 }
 
-crossSbtVersions := Vector("0.13.16", "1.0.2")
+crossSbtVersions := Vector("0.13.17", "1.0.4")
 
 scalaCompilerBridgeSource := {
   val sv = appConfiguration.value.provider.id.version
@@ -47,10 +47,6 @@ pomExtra := (
         <distribution>repo</distribution>
       </license>
     </licenses>
-    <scm>
-      <url>git@github.com:bytedeco/sbt-javacv.git</url>
-      <connection>scm:git:git@github.com:bytedeco/sbt-javacv.git</connection>
-    </scm>
     <developers>
       <developer>
         <id>lloydmeta</id>
@@ -65,4 +61,4 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.12")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.13")
