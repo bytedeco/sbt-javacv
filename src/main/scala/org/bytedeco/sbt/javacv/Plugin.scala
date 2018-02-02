@@ -25,7 +25,7 @@ object Plugin extends AutoPlugin {
   }
 
   object Versions {
-    val javaCVVersion = "1.3.2"
+    val javaCVVersion = "1.4"
   }
 
   object autoImport {
@@ -37,8 +37,7 @@ object Plugin extends AutoPlugin {
      * List of default JavaCPP preset names and versions that will be added by this plugin
      */
     val libs = Seq(
-      "opencv" -> "3.2.0",
-      "videoinput" -> "0.200"
+      "opencv" -> "3.4.0"
     )
   }
 

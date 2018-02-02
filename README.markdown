@@ -34,11 +34,22 @@ javaCppPlatform := "android-arm"
 
 For more details, see the [SBT-JavaCPP plugin](https://github.com/bytedeco/sbt-javacpp#customisation)
 
-Also, this plugin only pulls in `opencv` and `videoinput` JavaCPP presets by default. If you wish to add more, use the `javaCppPresetLibs`
+Also, this plugin only pulls in `opencv` JavaCPP preset by default. If you wish to add more, use the `javaCppPresetLibs`
 settings key and use `++=` to append more (if you do not use append, you will end up wiping out the ones this plugin appends by default):
 
 ```scala
 javaCppPresetLibs ++= Seq(
-  "ffmpeg" -> "3.2.1"
+  "ffmpeg" -> "3.4.1"
+)
+```
+
+### Note when upgrading from versions < 1.16:
+
+As of JavaCPP 1.4 `videoinput` is only available for windows, so it's not included by default since sbt-javacv 1.16.
+If you need it, you can add it just like any other JavaCPP preset:
+      
+```scala
+javaCppPresetLibs ++= Seq(
+  "videoinput" -> "0.200"
 )
 ```
