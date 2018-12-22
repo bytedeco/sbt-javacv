@@ -38,7 +38,7 @@ publishTo := {
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 
-pomExtra := (
+pomExtra :=
   <url>https://github.com/bytedeco/sbt-javacv</url>
     <licenses>
       <license>
@@ -47,6 +47,10 @@ pomExtra := (
         <distribution>repo</distribution>
       </license>
     </licenses>
+    <scm>
+      <url>git@github.com:bytedeco/sbt-javacv.git</url>
+      <connection>scm:git:git@github.com:bytedeco/sbt-javacv.git</connection>
+    </scm>
     <developers>
       <developer>
         <id>lloydmeta</id>
@@ -54,7 +58,6 @@ pomExtra := (
         <url>https://beachape.com</url>
       </developer>
     </developers>
-  )
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
