@@ -4,16 +4,16 @@ version := "1.17-SNAPSHOT"
 
 organization := "org.bytedeco"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.8"
 
 sbtVersion in Global := {
   if (scalaVersion.value.startsWith("2.12"))
-    "1.0.4"
+    "1.2.7"
   else
     "0.13.17"
 }
 
-crossSbtVersions := Vector("0.13.17", "1.0.4")
+crossSbtVersions := Vector("0.13.17", "1.2.7")
 
 scalaCompilerBridgeSource := {
   val sv = appConfiguration.value.provider.id.version
@@ -61,4 +61,4 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots")
 )
 
-addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.13")
+addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.14")
